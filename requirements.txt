@@ -1,5 +1,5 @@
 flask
 numpy==1.22.0
 matplotlib==3.4.0
-scipy==1.8.0
+scipy==1.10.0
 plotly==5.19.0
