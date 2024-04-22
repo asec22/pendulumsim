@@ -4,4 +4,4 @@ Pendulum Solutions is a respository of two differing solutions to the simple pen
 
 The code makes use of the matplotlib, plotly, sciPy, and numPy libraries.  You will have to pip install or coda install if you do not have these in your virtual environments. You will alse be using the BytesIO and base64 from os in the code. 
 
-The package has been deployed on go Daddy cPanel at !
+The package has been deployed on go Daddy cPanel at [Pendulum Plot](https://app.lifespectralsurvey.com/plotapp). You
