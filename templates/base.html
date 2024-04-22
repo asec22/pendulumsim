@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css')}}">
+<title>Pendulum Plot</title>
+</head>
+<body>
+    <table>
+    <tr>
+    <th colspan="2"><h1>Pendulum Ploting Program</h1>    
+    </th>    
+    <tr>
+        <td>
+        {% block nav %}    
+    
+        {% endblock %}    
+        </td>
+        <td>
+         {% block content %}{% endblock %}  
+        </td>
+        </tr>
+      <tr>
+          <td colspan="2"> <p> We are creating a simple pendulum with a mass at the end of a massless string. Using both linear and non-linear solutions, we solve the second order differential equation <math><mover><mrow><mi>&theta;</mi></mrow><mi>..</mi></mover><mo>=</mo><mfrac><mrow><mo>-</mo><mi>g</mi><mo>sin</mo><mi>&theta;</mi></mrow><mrow><mi>l</mi></mrow></mfrac></math> in state space.  We use state space to set up our system of equations in order to use numerical integration methods like the <a href="https://web.mit.edu/10.001/Web/Course_Notes/Differential_Equations_Notes/node5.html">Runge-Kutta Method</a>. In this simulation, we use the ordinary differential equation libaray from SciPy for the nonlinear solution while the linear solution is <math><mrow><msub><mi>&theta;</mi><mi>o</mi></msub><mo>cos</mo><mo>(</mo><mi>&omega;</mi><mi>t</mi><mo>)</mo></mrow></math>.   </p>
+<p>While the html form is my design, the solution code came from the YouTube Channel <i>Good Vibrations with Freeball</i>, specifically the video <i><a href="https://youtu.be/_eZyTNthJG4?si=3JuqA5FLS-6dMdxk">Coding a Numerical Solution to the Simple Pendulum Problem using Python</a></i>. Download the base code from <a href="https://github.com/apf99"> Freeball's GitHub</a>. </p> </td>
+        </tr>
+    </table>    
+</body>
+</html>

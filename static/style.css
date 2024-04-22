@@ -1,0 +1,28 @@
+body{
+    background-color:#465e80;
+    justify-content:center;
+}
+
+
+h1,
+h2,
+label,
+div,
+p,
+a{
+    color:white;
+    font-family:"Verdana", sans-serif;
+}
+
+td{
+    align-content:left;
+    vertical-align:top;
+    color:white;
+    font-family:"Verdana", sans-serif;
+}    
+    
+
+button.green{
+    background-color:#16a700;
+    color:white;
+}

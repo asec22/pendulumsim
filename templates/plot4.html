@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block content %}
+<table>
+    <tr>
+        <td><img src="data:image/png;base64,{{ image_url }}" width=1000px height=500px alt="Angular Motion"></td>
+    </tr>     
+    <tr>     
+        <td><iframe src="{{url_for('static',filename='pendulum2.html')}}" width=1000px height=500px></iframe></td>
+    </tr>    
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td><form action="{{url_for('index')}}" method="POST">
+                        <button type="submit" class='green'>Reset Plot</button>
+                        </form>
+                    <br>
+                    Please right-click on the plot you wish to save and select "Save Image As.." to save the plots for your reports.</td>
+                </tr>
+            </table>
+        </td>
+    </tr>    
+</table>    
+        
+{% endblock %}
+
+

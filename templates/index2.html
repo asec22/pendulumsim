@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% block nav %}
+<table>
+    <form action="{{url_for("plotshow")}}" method="post">
+		<div class="form-group">
+        <tr>
+            <td><label for="Length">Length(m)</label></td>
+            <td><input type="text" id="Length" name="length" placeholder="Enter a length"></td>
+        </tr>
+        <tr>    
+            <td><label for="InitalAngle">Intial Angle (deg)</label></td>
+            <td><input type="text" id="InitialAngle" name="angle" placeholder="Enter the initial angle"></td>
+        </tr>
+        <tr>
+            <td><label for="cars">Time Step(s):</label></td>
+            <td><select name="tstep" id="Time Step">
+                <option value=0.05>0.05</option>
+                <option value=0.1>0.1</option>
+                <option value=0.2>0.2</option>
+                <option value=0.5>0.5</option>
+                </select></td>
+            </tr>
+		</div>
+        <tr>
+		<td><button class=green type="submit">Submit</button><button class=green type="reset">Reset Form</button>
+    <td>
+        </tr>    
+	</form>
+    </table>
+{% endblock %}
+
+{% block content %}
+
+<p>Enter the length, initial angle, time period, and time step to observe the differences in the linear and non linear solutions for a simple pendulum.</p>
+
+{% endblock %}
+
