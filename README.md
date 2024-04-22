@@ -6,3 +6,4 @@ The code makes use of the matplotlib, plotly, sciPy, and numPy libraries.  You w
 
 The package has been deployed on go Daddy cPanel at [Pendulum Plot](https://app.lifespectralsurvey.com/plotapp). You need to run the requirements.txt in pip intaller on the SetUp Python Apps Tool on cPanel under Python 3.9.18 version. Otherwise you will get an error on pyproject.toml loader if you deploy on this hosting.  The versions of the packages are from 2018 before the package loader fork. 
 
+![image](pend.png)
